@@ -123,7 +123,7 @@ foreach ($chunked_card_arrays as $membercard_rows) {
 		$pdf->Cell(25,5,'',0);
 		$pdf->Cell(30,10,'Judul', 0, '', 'L');
 		$pdf->Cell(5,10,':',0, '', 'C');
-		$pdf->Cell(120,10,$card['member_essay'], 0, '', 'L');
+		$pdf->MultiCell(120,10,$card['member_essay'], 0);
 		$pdf->Ln(13);
 		$pdf->Cell(24,5,'',0);
 		$pdf->MultiCell(145,6,$sysconf['print']['freeloan']['result_letter'],0);
